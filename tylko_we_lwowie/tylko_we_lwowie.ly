@@ -14,9 +14,10 @@
   \new PianoStaff <<
 
   \new Staff \with {
-  \override StaffSymbol.thickness = #0.2
-\override Stem.thickness = #5.0
-}{
+    \override StaffSymbol.thickness = #0.2
+    \override Stem.thickness = #5.0
+	\override BarLine.hair-thickness = #0.2
+  }{
   \clef treble
   \time 3/4
   \key f \major
@@ -39,7 +40,11 @@
   Bo | szko -- da ga -- | da -- nia, bo | co chcesz to | mów | nie | ma jak | Lwów!
   }
 
-  \new Staff {
+  \new Staff \with {
+    \override StaffSymbol.thickness = #0.2
+    \override Stem.thickness = #5.0
+	\override BarLine.hair-thickness = #0.2
+  }{
   \clef bass
   \key f \major
   \partial 4

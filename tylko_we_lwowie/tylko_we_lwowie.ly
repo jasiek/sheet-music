@@ -7,19 +7,26 @@
 }
 
 
+
+\score{
+
 \relative c' {
   \new PianoStaff <<
-  \new Staff {
+
+  \new Staff \with {
+  \override StaffSymbol.thickness = #0.2
+\override Stem.thickness = #5.0
+}{
   \clef treble
   \time 3/4
   \key f \major
 
   \partial 4
-  c4 | c4 f4 f4       | f4 e4 f4     | g4 e4. d8   | c2.   | c'2.      | g2 bf4 | a4 f2~ | f4 r4
-  c4 | c4 f4 f4       | f4 e4 f4     | g4 e4. d8   | c2.   | c'2.      | g2 bf4 | a4 f2~ | f4 r4
-  f4 | f4 d4 f4       | bf2 d4       | d4 c4 b4    | c2 d4 | c4 bf4 a4 | bf4 bf4 c4 | bf4 a2~ | a4 r4
-  f4 | f4 d4 f4       | bf2 d4       | d4 c4 b4    | c2 a4 | a4 g4 f4  | b4 a4 g4 | c2.~ | c4 r4
-  c,4 | c4 f4 f4       | f4 e4 f4     | g4 e4. d8   | c2 c4 | c'2.      | g2 bf4 | a4 f2~ | f4 r4
+  c4-1 | c4-1 f4-4 f4       | f4 e4-3 f4-4     | g4-5 e4.-3 d8-2   | c2.-1   | c'2.-5      | g2-2 bf4-4 | a4-3 f2~-1 | f4 r4
+  c4-1 | c4-1 f4-4 f4       | f4 e4-3 f4-4     | g4-5 e4.-3 d8-2   | c2.-1   | c'2.-5      | g2-2 bf4-4 | a4-3 f2~-1 | f4 r4
+  f4-2 | f4-2 d4-1 f4       | bf2-4 d4-5       | d4-5 c4-4 b4-3    | c2-4 d4-5 | c4-4 bf4-3 a4-2 | bf4-3 bf4 c4-4 | bf4-3 a2~-2 | a4 r4
+  f4-2 | f4-2 d4-1 f4       | bf2-4 d4-5       | d4-5 c4-4 b4-3    | c2-4 a4-2 | a4-3 g4-2 f4-1  | b4-4 a4-3 g4-2 | c2.~-5 | c4-1 r4
+  c,4-1 | c4 f4 f4       | f4 e4 f4     | g4 e4. d8   | c2 c4 | c'2.      | g2 bf4 | a4 f2~ | f4 r4
   c4 | c4 f4 f4       | f4 e4 f4     | g4 e4. d8   | c2.   | c'2.      | g2 a4 | f4 r4 r4 
   }
 
@@ -36,14 +43,15 @@
   \clef bass
   \key f \major
   \partial 4
-  r4 | <f, a>2.~ | <f a>2. | <c e g>2.~| <c e g>2. | <c e g>2. | <c e g>2. | <f a>2.~ | <f a>2 r4 |
-  <f a>2.~ | <f a>2. | <c e g>2.~| <c e g>2. | <c e g>2. | <c e g>2. | <f a>2.~ | <f a>2 r4 |
+  r4 | <f, a>2.~ | <f a>2. | <c e g>2.~| <c e g>2. | <c e g>2.~ | <c e g>2. | <f a>2.~ | <f a>2 r4 |
+  <f a>2.~ | <f a>2. | <c e g>2.~| <c e g>2. | <c e g>2.~ | <c e g>2. | <f a>2.~ | <f a>2 r4 |
   <bf, d f>2.~ | <bf d f>2. | <f' a>2.~ | <f a>2. | <c e g>2.~ | <c e g>2. | <f a>2.~ | <f a>2 r4 |
   <bf, d f>2.~ | <bf d f>2. | <f' a>2.~ | <f a>2. | <f a>2. | <g b>2. | <c, e g>2.~ | <c e g>2 r4 |
-  <f a>2.~ | <f a>2. | <c e g>2.~| <c e g>2. | <c e g>2. | <c e g>2. | <f a>2.~ | <f a>2 r4 |
-  <f a>2.~ | <f a>2. | <c e g>2.~| <c e g>2. | <c e g>2. | <c e g>2. | <f a>2.
+  <f a>2.~ | <f a>2. | <c e g>2.~| <c e g>2. | <c e g>2.~ | <c e g>2. | <f a>2.~ | <f a>2 r4 |
+  <f a>2.~ | <f a>2. | <c e g>2.~| <c e g>2. | <c e g>2.~ | <c e g>2. | <f a>2.
   }
   >>
+}
 }
 
   
